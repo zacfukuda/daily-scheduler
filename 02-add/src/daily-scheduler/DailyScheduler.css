@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+.daily-scheduler {
+  max-width: 1024px;
+}
+
+.category-buttons {
+  margin: 0 0 32px;
+  text-align: center;
+}
+
+.category-button {
+  height: 32px;
+  background-color: #f2f4f6;
+  border: 1px solid #dadbdc;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  margin: 0 4px;
+  padding: 0 16px;
+}
+.category-button:hover {
+  background-color: #eaebec;
+}
+.category-button.on {
+  border-color: rgb(0, 144, 237);
+  outline: 2px solid rgba(0, 144, 237, 0.4);
+}
+.category-button > svg {
+  vertical-align: text-bottom;
+}
+
+.track {
+  position: relative;
+}
+
+.guidelines {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.guideline {
+  width: 1px;
+  height: 44px;
+  position: relative;
+  background-color: #ccc;
+  color: #aaa;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.guideline > span {
+  width: 16px;
+  position: absolute;
+  top: -16px;
+  left: -7px;
+  text-align: center;
+}
+
+.new-schedule-track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.schedule-item {
+  width: auto;
+  height: 24px;
+  position: absolute;
+  top: 10px;
+  border-width: 1px;
+  border-style: solid;
+  z-index: 5;
+}
+.schedule-item.focused {
+  border-width: 2px;
+}

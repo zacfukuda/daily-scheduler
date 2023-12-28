@@ -1,0 +1,10 @@
+/lang
+/node_modules
+/public
+/storage
+/scripts
+/tests
+/vendor
+.prettierrc
+package.json
+*.html
