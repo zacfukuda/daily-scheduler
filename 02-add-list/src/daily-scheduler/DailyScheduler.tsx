@@ -4,9 +4,9 @@ import { joinSchedules, updateSchedules } from "./daily-scheduler-util";
 import CategoryButtons from "./CategoryButtons";
 import Guidelines from "./Guidelines";
 import NewScheduleTrack from "./NewScheduleTrack";
+import Schedules from "./Schedules";
 import "./DailyScheduler.css";
 import type { ScheduleCategoryButton } from "./CategoryButton";
-import Schedules from "./Schedules";
 
 function initailCategories(): ScheduleCategoryButton[] {
   const categories: ScheduleCategoryButton[] = [...scheduleCategories];

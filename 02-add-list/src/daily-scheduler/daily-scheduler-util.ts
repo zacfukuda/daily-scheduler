@@ -1,3 +1,5 @@
+const LEFT = 1;
+const RIGHT = 2;
 const DEFAULT_HOUR_START = 0;
 
 let hour1 = 0;
@@ -279,7 +281,7 @@ export function addTrash(schedule: ScheduleItem): void {
 }
 
 export function updateSchedules(ss: ScheduleItem[]): void {
-  if (ss === undefined || ss === null || ss.length === 0) {
+  if (ss.length === 0) {
     schedules = [];
 
     return;
