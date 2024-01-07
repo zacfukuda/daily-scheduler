@@ -102,6 +102,13 @@ export default function Schedule({
     else current.style.cursor = "col-resize";
   }
 
+  function handleWindowMouseMove(e: MouseEvent): void {
+    const o = getStartAndEndOnSchedule(start, end, e.clientX);
+    const target = ref.current as HTMLDivElement;
+    target.style.left = o.start + "px";
+    target.style.width = o.end - o.start + "px";
+  }
+
   function handleWindowMouseUp(e: MouseEvent): void {
     const o = getStartAndEndOnSchedule(start, end, e.clientX);
 
@@ -119,14 +126,7 @@ export default function Schedule({
       index,
     });
   }
-
-  function handleWindowMouseMove(e: MouseEvent): void {
-    const o = getStartAndEndOnSchedule(start, end, e.clientX);
-    const target = ref.current as HTMLDivElement;
-    target.style.left = o.start + "px";
-    target.style.width = o.end - o.start + "px";
-  }
-
+  
   useEffect(() => {
     const current = ref.current as HTMLDivElement;
     const { left, right } = current.getBoundingClientRect();

@@ -11,15 +11,15 @@ The live demo is available at https://cdn.zacfukuda.com/demo/daily-scheduler/ind
 The official tutorials are available on author’s blog:
 
 1. [Introduction](https://www.zacfukuda.com/blog/daily-scheduler-1)
-2. Adding, listing(coming soon)
-3. Updating, removing(coming soon)
+2. [Add and list](https://www.zacfukuda.com/blog/daily-scheduler-2)
+3. [Update, remove, and load data](https://www.zacfukuda.com/blog/daily-scheduler-3)
 
 ## Directories
 
 The source codes are organized into three directories:
 
 1. [01-intro](./tree/main/01-seed): Seed directory to get started.
-2. [02-add](./tree/main/02-add-list): Add a new schedule, list rendering.
+2. [02-add-list](./tree/main/02-add-list): Add a new schedule, list rendering.
 3. [03-update-remove](./tree/main/03-update-remove): Update and remove individual schedule in the list.
 
 ## Note
